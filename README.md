@@ -1,1 +1,0 @@
-# GeorgeHcc.github.io
