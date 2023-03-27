@@ -39,12 +39,12 @@ async function main() {
   const config = yamlToJs.load(configPath) // 解析配置文件的数据转为js对象
 
   if (type(config.path) !== 'array') {
-    log(chalk.red('路径配置有误，path字段应该是一个数组'))
+    log(chalk.red('路径配置有误,path字段应该是一个数组'))
     return
   }
 
   if (config.path[0] !== 'docs') {
-    log(chalk.red("路径配置有误，path数组的第一个成员必须是'docs'"))
+    log(chalk.red("路径配置有误,path数组的第一个成员必须是'docs'"))
     return
   }
 
@@ -60,7 +60,7 @@ async function main() {
     // 删除操作
     if (config.delete) {
       if( type(config.delete) !== 'array' ) {
-        log(chalk.yellow('未能完成删除操作，delete字段的值应该是一个数组！'))
+        log(chalk.yellow('未能完成删除操作,delete字段的值应该是一个数组！'))
       } else {
         config.delete.forEach(item => {
           if (matterData[item]) {
