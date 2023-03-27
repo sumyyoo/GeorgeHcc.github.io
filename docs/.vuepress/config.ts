@@ -138,7 +138,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     bodyBgImg: [
       'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
       'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
-      'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg'
+      'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg',
+      '/img/sbpk.png'
     ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
     bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~1.0, 默认0.5
     bodyBgImgInterval: 15, // body多张背景图时的切换间隔, 默认15，单位s
