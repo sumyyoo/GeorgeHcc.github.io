@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /img/GeorgeH.jpg
+heroImage: /img/avatar.png
 heroText: GeorgeH's Blog
 tagline: Web前端技术博客，积跬步以至千里，致敬每个爱学习的你。
 # actionText: 立刻进入 →
