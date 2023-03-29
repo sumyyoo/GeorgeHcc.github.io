@@ -137,8 +137,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     bodyBgImg: [
       "https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg",
-      // "https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg",
-      // "/img/sbpk.png",
     ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
     bodyBgImgOpacity: 0.9, // body背景图透明度，选值 0.1~1.0, 默认0.5
     // bodyBgImgInterval: 15, // body多张背景图时的切换间隔, 默认15，单位s
@@ -170,9 +168,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      // avatar: 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
       avatar:
-        "https://cdn.jsdelivr.net/gh/GeorgeHcc/georgehcc.github.io@master/static_files/img/GeorgeH.jpg",
+        "https://cdn.jsdelivr.net/gh/GeorgeHcc/GeorgeHcc@main/assets/blog/GeorgeH.jpg",
       name: "GeorgeH",
       slogan: "talk is cheap,show me the code",
     },
@@ -199,7 +196,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {
           iconClass: "icon-weixin",
           title: "微信",
-          link: "https://cdn.jsdelivr.net/gh/GeorgeHcc/georgehcc.github.io/static_files/img/wechat.png",
+          link: "https://cdn.jsdelivr.net/gh/GeorgeHcc/GeorgeHcc@main/assets/blog/wechat.png",
         },
       ],
     },
