@@ -8,8 +8,8 @@ import dayjs from "dayjs";
 import baiduCode from "./config/baiduCode"; // 百度统计hm码
 import htmlModules from "./config/htmlModules"; // 自定义插入的html块
 
-const DOMAIN_NAME = "xugaoyi.com"; // 域名 (不带https)
-const WEB_SITE = `https://${DOMAIN_NAME}`; // 网址
+// const DOMAIN_NAME = "xugaoyi.com"; // 域名 (不带https)
+// const WEB_SITE = `https://${DOMAIN_NAME}`; // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
   theme: "vdoing", // 使用npm主题包
@@ -18,7 +18,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "GeorgeH's Blog",
+      title: "George's blog",
       description:
         "web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。",
     },
@@ -160,7 +160,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 默认外观模式（用户未在页面手动修改过模式时才生效，否则以用户设置的模式为准），可选：'auto' | 'light' | 'dark' | 'read'，默认'auto'。
     defaultMode: 'dark',
-
     // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | <自定义>    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
     sidebar: "structuring",
 
@@ -249,12 +248,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   // 插件配置
   plugins: <UserPlugins>[
-    [
-      "sitemap", // 网站地图
-      {
-        hostname: WEB_SITE,
-      },
-    ],
+    // [
+    //   "sitemap", // 网站地图
+    //   {
+    //     hostname: WEB_SITE,
+    //   },
+    // ],
 
     "vuepress-plugin-baidu-autopush", // 百度自动推送
 
