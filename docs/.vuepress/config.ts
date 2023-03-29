@@ -36,7 +36,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
-            text: "前端文章",
+            text: "前端",
             items: [{ text: "JavaScript", link: "/pages/8143cc480faf9a11/" }],
           },
           {
@@ -67,44 +67,44 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           },
         ],
       },
+
       {
-        text: "页面",
-        link: "/ui/",
+        text: "计算机基础",
         items: [
-          { text: "HTML", link: "/pages/8309a5b876fc95e3/" },
-          { text: "CSS", link: "/pages/0a83b083bdf257cb/" },
+          {
+            text: "学习笔记",
+            items: [
+              { text: "操作系统", link: "/cs/os/" },
+              { text: "计算机网络", link: "/cs/net/" },
+              { text: "数据结构", link: "/cs/ds/" },
+            ],
+          },
+          {
+            text: "实用工具",
+            items: [
+              { text: "网络抓包工具", link: "/pages/57d8f4/" }
+            ],
+          },
         ],
       },
       {
-        text: "技术",
-        link: "/technology/",
+        text: "文章",
+        link: "/article/",
         items: [
-          { text: "技术文档", link: "/pages/9a7ee40fc232253e/" },
-          { text: "GitHub技巧", link: "/pages/4c778760be26d8b3/" },
-          { text: "Nodejs", link: "/pages/117708e0af7f0bd9/" },
-          { text: "博客搭建", link: "/pages/41f87d890d0a02af/" },
-        ],
-      },
-      {
-        text: "更多",
-        link: "/more/",
-        items: [
-          { text: "学习", link: "/pages/f2a556/" },
-          { text: "面试", link: "/pages/aea6571b7a8bae86/" },
-          { text: "心情杂货", link: "/pages/2d615df9a36a98ed/" },
-          { text: "实用技巧", link: "/pages/baaa02/" },
-          { text: "友情链接", link: "/friends/" },
+          { text: "面试", link: "/interview" },
+          { text: "生活记录", link: "/life" },
+          { text: "鸡汤", link: "/soul" },
         ],
       },
       { text: "关于", link: "/about/" },
       {
         text: "收藏",
         link: "/pages/beb6c0bd8a66cea6/",
-        // items: [
-        //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
-        //   { text: '资源', link: '/pages/eee83a9211a70f9d/' },
-        //   { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
-        // ],
+        items: [
+          { text: "网站", link: "/pages/beb6c0bd8a66cea6/" },
+          { text: "资源", link: "/pages/eee83a9211a70f9d/" },
+          { text: "Vue资源", link: "/pages/12df8ace52d493f6/" },
+        ],
       },
       {
         text: "索引",
@@ -136,12 +136,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // pageStyle: 'line', // 页面风格，可选值：'card'卡片 | 'line' 线（未设置bodyBgImg时才生效）， 默认'card'。 说明：card时背景显示灰色衬托出卡片样式，line时背景显示纯色，并且部分模块带线条边框
 
     bodyBgImg: [
-      'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
-      'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg',
-      '/img/sbpk.png'
+      "https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg",
+      // "https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg",
+      // "/img/sbpk.png",
     ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
-    bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~1.0, 默认0.5
-    bodyBgImgInterval: 15, // body多张背景图时的切换间隔, 默认15，单位s
+    bodyBgImgOpacity: 0.9, // body背景图透明度，选值 0.1~1.0, 默认0.5
+    // bodyBgImgInterval: 15, // body多张背景图时的切换间隔, 默认15，单位s
     // titleBadge: false, // 文章标题前的图标是否显示，默认true
     // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
     //   '图标地址1',
@@ -158,7 +158,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // pageButton: false, // 是否显示快捷翻页按钮，默认true
 
     // 默认外观模式（用户未在页面手动修改过模式时才生效，否则以用户设置的模式为准），可选：'auto' | 'light' | 'dark' | 'read'，默认'auto'。
-    defaultMode: 'dark',
+    defaultMode: "dark",
     // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | <自定义>    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
     sidebar: "structuring",
 
@@ -171,11 +171,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 博主信息 (显示在首页侧边栏)
     blogger: {
       // avatar: 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-      avatar: "https://cdn.jsdelivr.net/gh/GeorgeHcc/georgehcc.github.io@master/static_files/img/GeorgeH.jpg",
+      avatar:
+        "https://cdn.jsdelivr.net/gh/GeorgeHcc/georgehcc.github.io@master/static_files/img/GeorgeH.jpg",
       name: "GeorgeH",
       slogan: "talk is cheap,show me the code",
     },
-   
+
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
     social: {
       // iconfontCssFile: '//at.alicdn.com/t/xxx.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。阿里图片库：https://www.iconfont.cn/
@@ -198,8 +199,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {
           iconClass: "icon-weixin",
           title: "微信",
-          link:"https://cdn.jsdelivr.net/gh/GeorgeHcc/georgehcc.github.io/static_files/img/wechat.png"
-        }
+          link: "https://cdn.jsdelivr.net/gh/GeorgeHcc/georgehcc.github.io/static_files/img/wechat.png",
+        },
       ],
     },
 
@@ -209,7 +210,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       copyrightInfo:
         'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
     },
-  
+
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
     extendFrontmatter: {
       author: {
@@ -219,7 +220,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     },
 
     // 自定义hmtl(广告)模块
-    htmlModules,
+    // htmlModules,
   },
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
