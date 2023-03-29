@@ -137,7 +137,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     bodyBgImg: [
       'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
-      // 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
       'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg',
       '/img/sbpk.png'
     ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
@@ -172,11 +171,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 博主信息 (显示在首页侧边栏)
     blogger: {
       // avatar: 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-      avatar: "/img/GeorgeH.jpg",
+      avatar: "https://cdn.jsdelivr.net/gh/GeorgeHcc/georgehcc.github.io@master/static_files/img/GeorgeH.jpg",
       name: "GeorgeH",
       slogan: "talk is cheap,show me the code",
     },
-
+   
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
     social: {
       // iconfontCssFile: '//at.alicdn.com/t/xxx.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。阿里图片库：https://www.iconfont.cn/
@@ -199,7 +198,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {
           iconClass: "icon-weixin",
           title: "微信",
-          link:""
+          link:"https://cdn.jsdelivr.net/gh/GeorgeHcc/georgehcc.github.io/static_files/img/wechat.png"
         }
       ],
     },
