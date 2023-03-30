@@ -69,7 +69,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
       {
         text: "计算机基础",
-        link:"/cs/",
+        link: "/cs/",
         items: [
           {
             text: "学习笔记",
@@ -81,31 +81,29 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           },
           {
             text: "算法",
-            items:[
-              {text: "算法基础",link: "/cs/algorithm/"},
-              {text: "刷题记录",link: "/cs/practice/"},
-            ]
+            items: [
+              { text: "算法基础", link: "/pages/d79d62/" },
+              { text: "刷题记录", link: "/cs/practice/" },
+            ],
           },
           {
             text: "实用工具",
-            items: [
-              { text: "网络抓包工具", link: "/pages/57d8f4/" }
-            ],
+            items: [{ text: "网络抓包工具", link: "/pages/57d8f4/" }],
           },
         ],
       },
-     {
-      text: "技术",
-      link:"/tech/",
-      items:[
-        {text:"docker",link:"/tech/docker/"},
-        {text:"serverless",link:"/tech/serverless/"},
-        // {text:"docker",link:"/tech/docker"},
-      ]
-     },
+      {
+        text: "技术",
+        link: "/tech/",
+        items: [
+          { text: "docker", link: "/pages/048d97/" },
+          { text: "serverless", link: "/pages/504ba5//" },
+          // {text:"docker",link:"/tech/docker"},
+        ],
+      },
       {
         text: "其他",
-        link:"/other/",
+        link: "/other/",
         items: [
           { text: "面试", link: "/other/interview/" },
           { text: "生活记录", link: "/other/life/" },
@@ -184,8 +182,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar:
-        "https://cdn.jsdelivr.net/gh/GeorgeHcc/GeorgeHcc@main/assets/blog/GeorgeH.jpg",
+      avatar: "https://cdn.jsdelivr.net/gh/GeorgeHcc/GeorgeHcc@main/assets/blog/GeorgeH.jpg",
       name: "GeorgeH",
       slogan: "talk is cheap,show me the code",
     },
