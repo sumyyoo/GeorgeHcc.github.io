@@ -97,7 +97,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         link: "/tech/",
         items: [
           { text: "docker", link: "/pages/048d97/" },
-          { text: "serverless", link: "/pages/504ba5//" },
+          { text: "serverless", link: "/pages/504ba5/" },
           // {text:"docker",link:"/tech/docker"},
         ],
       },
