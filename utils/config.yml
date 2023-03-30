@@ -4,12 +4,22 @@
 path:
   - docs # 第一个成员必须是docs
 
+  - 600.其他
+
 # 要删除的字段 (数组)
 delete:
-  # - tags
+  - tags
 
  # 要添加、修改front matter的数据 （front matter中没有的数据则添加，已有的数据则覆盖）
 data:
-  author:
-    name: GeorgeH
-    link: https://github.com/GeorgeHcc
+ pageComponent:
+    name: Catalogue
+    data:
+      path:
+      imgUrl:
+      description:
+ sidebar: false
+ article: false
+ comment: false
+ editLink: false
+

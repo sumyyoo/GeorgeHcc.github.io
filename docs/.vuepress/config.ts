@@ -6,7 +6,7 @@ import { defineConfig4CustomTheme, UserPlugins } from "vuepress/config";
 import { VdoingThemeConfig } from "vuepress-theme-vdoing/types";
 import dayjs from "dayjs";
 import baiduCode from "./config/baiduCode"; // 百度统计hm码
-import htmlModules from "./config/htmlModules"; // 自定义插入的html块
+// import htmlModules from "./config/htmlModules"; // 自定义插入的html块
 
 // const DOMAIN_NAME = "xugaoyi.com"; // 域名 (不带https)
 // const WEB_SITE = `https://${DOMAIN_NAME}`; // 网址
@@ -67,9 +67,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           },
         ],
       },
-
       {
         text: "计算机基础",
+        link:"/cs/",
         items: [
           {
             text: "学习笔记",
@@ -80,6 +80,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             ],
           },
           {
+            text: "算法",
+            items:[
+              {text: "算法基础",link: "/cs/algorithm/"},
+              {text: "刷题记录",link: "/cs/practice/"},
+            ]
+          },
+          {
             text: "实用工具",
             items: [
               { text: "网络抓包工具", link: "/pages/57d8f4/" }
@@ -87,16 +94,25 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           },
         ],
       },
+     {
+      text: "技术",
+      link:"/tech/",
+      items:[
+        {text:"docker",link:"/tech/docker/"},
+        {text:"serverless",link:"/tech/serverless/"},
+        // {text:"docker",link:"/tech/docker"},
+      ]
+     },
       {
-        text: "文章",
-        link: "/article/",
+        text: "其他",
+        link:"/other/",
         items: [
-          { text: "面试", link: "/interview" },
-          { text: "生活记录", link: "/life" },
-          { text: "鸡汤", link: "/soul" },
+          { text: "面试", link: "/other/interview/" },
+          { text: "生活记录", link: "/other/life/" },
+          { text: "鸡汤", link: "/other/soul/" },
         ],
       },
-      { text: "关于", link: "/about/" },
+      // { text: "关于", link: "/about/" },
       {
         text: "收藏",
         link: "/pages/beb6c0bd8a66cea6/",
@@ -135,10 +151,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // pageStyle: 'line', // 页面风格，可选值：'card'卡片 | 'line' 线（未设置bodyBgImg时才生效）， 默认'card'。 说明：card时背景显示灰色衬托出卡片样式，line时背景显示纯色，并且部分模块带线条边框
 
-    bodyBgImg: [
-      "https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg",
-    ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
-    bodyBgImgOpacity: 0.9, // body背景图透明度，选值 0.1~1.0, 默认0.5
+    // bodyBgImg: [
+    //   "https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg",
+    // ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
+    // bodyBgImgOpacity: 0.9, // body背景图透明度，选值 0.1~1.0, 默认0.5
     // bodyBgImgInterval: 15, // body多张背景图时的切换间隔, 默认15，单位s
     // titleBadge: false, // 文章标题前的图标是否显示，默认true
     // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
