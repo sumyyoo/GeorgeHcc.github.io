@@ -7,7 +7,11 @@
 <div style="display:flex;justify-content:center">
 <img src="https://github.com/GeorgeHcc/GeorgeHcc.github.io/actions/workflows/ci.yml/badge.svg?event=push" />
 <img src="https://github.com/GeorgeHcc/GeorgeHcc.github.io/actions/workflows/baiduPush.yml/badge.svg"/>
+
+<a href="https://github.com/xugaoyi/vuepress-theme-vdoing">
 <img src="https://img.shields.io/badge/theme-vdoing-brightgreen"/>
+</a>
+
 </div>
 
 # powered by vuepress-theme-vdoing
