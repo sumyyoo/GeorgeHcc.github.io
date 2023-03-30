@@ -112,7 +112,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: "鸡汤", link: "/other/soul/" },
         ],
       },
-      // { text: "关于", link: "/about/" },
+      { text: "关于", link: "/about/" },
       {
         text: "收藏",
         link: "/pages/beb6c0bd8a66cea6/",
