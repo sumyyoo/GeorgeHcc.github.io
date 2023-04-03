@@ -25,7 +25,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         "web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。",
     },
   },
-  base: "/blog/", // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
+  // base: "/", // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
 
   // 主题配置
   themeConfig: {
@@ -273,6 +273,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ],
     // ["meta", { name: "baidu-site-verification", content: "7F55weZDDc" }], // 百度统计的站长验证（你可以去掉）
     ["meta", { name: "theme-color", content: "#11a8cd" }], // 移动浏览器主题颜色
+    ["meta",{name:"baidu-site-verification",content:"codeva-ZaOnRvW0XM"}]//baidu 验证
+    // <meta name="baidu-site-verification" content="codeva-ZaOnRvW0XM" />
     // [
     //   'script',
     //   {
