@@ -285,12 +285,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   // 插件配置
   plugins: <UserPlugins>[
-    // [
-    //   "sitemap", // 网站地图
-    //   {
-    //     hostname: WEB_SITE,
-    //   },
-    // ],
+    [
+      "sitemap", // 网站地图
+      {
+        hostname: WEB_SITE,
+      },
+    ],
     {
       name: "custom-plugins",
       globalUIComponents: ["PageInfo"], // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
